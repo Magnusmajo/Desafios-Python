@@ -116,8 +116,8 @@ Call both methods without creating an instance of the class.
 
 Modify the Product class to have a __str__ method that returns a string representing the product in the format "Name: name, Price: price".
 
--- 
+--  
 
-Author: Alexis Rodriguez Rodriguez
-Date: Dec-2024
+Author: Alexis Rodriguez Rodriguez  
+Date: Dec-2024  
 This is an public project to practice. I hope you all find it useful.
