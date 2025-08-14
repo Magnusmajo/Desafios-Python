@@ -2,10 +2,12 @@
 
 ## Temas principales
 
-- ¿Qué es un algoritmo?
-- Conceptos de entrada, procesamiento y salida.
-- Python como lenguaje de alto nivel.
-- Sintaxis básica: `print()`, comentarios (`#`).
+## Índice
+
+- [¿Qué es un algoritmo?](#qué-es-un-algoritmo)
+- [Conceptos de entrada, procesamiento y salida](#conceptos-clave)
+- [Python como lenguaje de alto nivel](#python-como-lenguaje-de-alto-nivel)
+- [Sintaxis básica: `print()`, comentarios (`#`)](#sintaxis-básica-en-python)
 
 ---
 
