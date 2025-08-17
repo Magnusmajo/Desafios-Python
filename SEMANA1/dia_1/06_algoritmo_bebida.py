@@ -1,0 +1,5 @@
+print("Paso 1: Calentar el agua")
+print("Paso 2: Sacar el vaso")
+print("Paso 3: Colocar la bolsita dentro del vaso")
+print("Paso 4: Vertir el agua caliente dentro del vaso")
+print("Paso5: Esperar 5 minutos")
