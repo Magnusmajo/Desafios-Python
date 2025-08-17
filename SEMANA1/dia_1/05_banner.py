@@ -9,7 +9,7 @@ ancho = len(nombre) + 6
 
 print("*" * ancho)                       # línea superior
 print("|" + " " * (ancho - 2) + "|")     # línea en blanco
-print("*" + nombre.center(ancho - 2) + "*")  # línea con el nombre centrado
+print("|" + nombre.center(ancho - 2) + "|")  # línea con el nombre centrado
 print("|" + " " * (ancho - 2) + "|")     # línea en blanco
 print("*" * ancho)                       # línea inferior
 
