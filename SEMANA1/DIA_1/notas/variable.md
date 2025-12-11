@@ -1,108 +1,79 @@
-# Día 1 - Pensamiento computacional y sintaxis mínima
+# Variables y tipos de datos
 
-## Temas principales
-
-## Índice
-
-- [¿Qué es un algoritmo?](#qué-es-un-algoritmo)
-- [Conceptos de entrada, procesamiento y salida](#conceptos-clave)
-- [Python como lenguaje de alto nivel](#python-como-lenguaje-de-alto-nivel)
-- [Sintaxis básica: `print()`, comentarios (`#`)](#sintaxis-básica-en-python)
-
----
-
-## ¿Qué es un algoritmo?
-
-Un **algoritmo** es un conjunto ordenado y finito de pasos o instrucciones que se siguen para resolver un problema o realizar una tarea específica. Cada paso debe ser claro, preciso y ejecutable, permitiendo transformar una entrada en una salida mediante un proceso definido. Los algoritmos se aplican en la vida cotidiana, en matemáticas y en programación para automatizar soluciones y facilitar la toma de decisiones.
-
-### Ejemplo: Ir a la escuela
-
-**Algoritmo (pasos):**
-1. Despertarse.
-2. Levantarse de la cama.
-3. Ducharse.
-4. Colocarse el uniforme.
-5. Desayunar.
-6. Alistar la mochila.
-7. Salir de casa.
-8. Tomar el bus.
-9. Llegar a la escuela.
-
-Estos son pasos abstractos; debemos pensar en las acciones que vamos a realizar o utilizar.
-
----
-
-## Características de los algoritmos
-
-- **Finitos:** Tienen un inicio y un final definidos.
-- **Precisos:** Cada paso está claramente especificado.
-- **Entradas:** Pueden tener una o más entradas.
-- **Salida:** Producen al menos un resultado.
-- **Definidos:** Siempre llevan al mismo objetivo si se siguen correctamente.
-- **Eficientes:** Utilizan el mínimo espacio de memoria y tiempo de ejecución posible.
-
----
-
-## Conceptos clave
-
-- **Entrada:** Datos iniciales que recibe el algoritmo.
-- **Procesamiento:** Conjunto de operaciones que transforman la entrada.
-- **Salida:** Resultado final obtenido tras el procesamiento.
-
----
-
-## Python como lenguaje de alto nivel
-
-Python es un lenguaje de programación de alto nivel, lo que significa que su sintaxis es sencilla y cercana al lenguaje humano, facilitando el aprendizaje y la escritura de algoritmos.
-
-### Sintaxis básica en Python
+## ¿Qué es una variable?
+Una variable es un nombre que hace referencia a un valor almacenado en memoria. Debe comenzar con una letra o guion bajo y no puede contener espacios ni caracteres especiales.
 
 ```python
-# Esto es un comentario
-print("Hola, mundo!")  # Imprime un mensaje en pantalla
+contador = 10
+_nombre = "Ana"
+es_activo = True
 ```
 
-- Los comentarios comienzan con `#` y sirven para explicar el código. Todo lo que se escriba después del símbolo `#` en una línea será ignorado por Python al ejecutar el programa. Los comentarios ayudan a documentar el propósito de las instrucciones, facilitan la comprensión del código y permiten dejar notas para otros programadores o para uno mismo en el futuro.
-
-### Diferentes formas de comentarios en Python
-
-- **Comentario de una sola línea:** Se usa el símbolo `#` al inicio de la línea.
+## Tipos de datos primitivos
+- **Enteros (`int`)**: números sin decimales  
     ```python
-    # Este es un comentario de una sola línea
-    print("Hola, mundo!")  # Comentario al final de la línea
+    edad = 30
+    ```
+- **Flotantes (`float`)**: números con decimales  
+    ```python
+    precio = 19.99
+    ```
+- **Cadenas (`str`)**: texto entre comillas simples o dobles  
+    ```python
+    mensaje = "Hola, mundo"
+    ```
+- **Booleanos (`bool`)**: valores lógicos `True` o `False`  
+    ```python
+    es_valido = False
     ```
 
-- **Comentario de varias líneas:** Se pueden usar varios símbolos `#` consecutivos o emplear cadenas de texto multilínea (triple comillas) como comentarios, aunque estas últimas se usan principalmente para docstrings.
+## Estructuras de datos
+- **Listas (`list`)**: colección ordenada y mutable  
     ```python
-    # Primer comentario
-    # Segundo comentario
-    # Tercer comentario
-
-    """
-    Este es un comentario de varias líneas
-    usando triple comillas.
-    Normalmente se utiliza para documentación.
-    """
+    frutas = ["manzana", "banana", "cereza"]
+    ```
+- **Tuplas (`tuple`)**: colección ordenada e inmutable  
+    ```python
+    coordenadas = (10, 20)
+    ```
+- **Diccionarios (`dict`)**: pares clave-valor  
+    ```python
+    persona = {"nombre": "Luis", "edad": 25}
+    ```
+- **Conjuntos (`set`)**: colección no ordenada de elementos únicos  
+    ```python
+    colores = {"rojo", "verde", "azul"}
     ```
 
-También se pueden usar comentarios para desactivar temporalmente partes del código durante pruebas o depuración.
+## Conversión de tipos
+Se pueden convertir valores entre tipos con funciones incorporadas:
+```python
+numero_str = "42"
+numero_int = int(numero_str)      # 42
+texto = str(3.14)                 # "3.14"
+bandera = bool(0)                 # False
+```
 
----
+## Ejemplo simple:
 
-## Ejercicio práctico
+```python
+edad = 30                #int
+altura = 1.78            #float
+nombre = "Alexis"        #str
+activo = True            #bool
+frutas = ["mango", "guayaba", "banana"]
+libros = {
+    "1984": "George Orwell",
+    "Cien años de soledad": "Gabriel García Márquez",
+    "El Quijote": "Miguel de Cervantes"
+}
+contraseña = (10, "yosoygoot", "12avenida")
+autos = {"Ford Mustang", "Chevrolet Bel Air", "Volkswagen Beetle"}
+```
 
-Escribe un algoritmo en pseudocódigo para preparar una taza de té:
-
-1. Calentar agua.
-2. Colocar una bolsita de té en la taza.
-3. Verter el agua caliente en la taza.
-4. Esperar unos minutos.
-5. Retirar la bolsita de té.
-6. Disfrutar el té.
-
----
-
-## Resumen
-
-El pensamiento computacional nos ayuda a descomponer problemas en pasos simples y claros. Aprender la sintaxis básica de Python es el primer paso para implementar algoritmos y resolver problemas de manera eficiente.
+## Buenas prácticas
+- Usar nombres descriptivos.
+- Respetar la sensibilidad a mayúsculas/minúsculas.
+- Elegir el tipo de dato adecuado para cada uso.
+- Evitar cambiar el tipo de una variable sin necesidad.
 
