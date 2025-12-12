@@ -14,20 +14,54 @@ Devuelva el resultado
 
 NO se rompa si el usuario pone algo inesperado'''
 
-# num1 = input("Ingresa el primer numero: ")
-# for i in num1:
-#     if not (i.isdigit())
-# num2 = input("Ingresa el segundo numero: ")
+def validar_numero(texto):
+    """Valida que el texto sea un número válido (entero o decimal)"""
+    if not texto or texto == ".":
+        return False
+    
+    # Contar puntos decimales
+    puntos = texto.count(".")
+    if puntos > 1:
+        return False
+    
+    # Verificar que todos los caracteres sean dígitos o un punto
+    for i in texto:
+        if not (i.isdigit() or i == "."):
+            return False
+    
+    return True
 
-# operacion = input ("Ingresa la operacion que quieres realizar (suma, resta, multiplicacion, division): ")
+def obtener_numero(mensaje):
+    """Solicita un número al usuario y valida que sea correcto"""
+    while True:
+        entrada = input(mensaje)
+        if validar_numero(entrada):
+            return float(entrada)
+        else:
+            print("Error: Ingresa un número válido")
 
+# Solicitar los números
+num1 = obtener_numero("Ingresa el primer numero: ")
+num2 = obtener_numero("Ingresa el segundo numero: ")
 
-# print(f"La suma de {num1} + {num2} = {num1 + num2}")
-# print(f"La resta de {num1} - {num2} = {num1 - num2}")
-# print(f"La multiplicacion de {num1} * {num2} = {num1 * num2}")
-# print(f"La division de {num1} / {num2} = {num1 / num2}")
+# Solicitar la operación
+operacion = input("Ingresa la operacion que quieres realizar (suma, resta, multiplicacion, division): ").lower().strip()
 
-
-parte = "1.5.4........."
-print(parte.count("."))
-print(parte)
+# Realizar la operación solicitada
+if operacion == "suma":
+    resultado = num1 + num2
+    print(f"La suma de {num1} + {num2} = {resultado}")
+elif operacion == "resta":
+    resultado = num1 - num2
+    print(f"La resta de {num1} - {num2} = {resultado}")
+elif operacion == "multiplicacion":
+    resultado = num1 * num2
+    print(f"La multiplicacion de {num1} * {num2} = {resultado}")
+elif operacion == "division":
+    if num2 != 0:
+        resultado = num1 / num2
+        print(f"La division de {num1} / {num2} = {resultado}")
+    else:
+        print("Error: No se puede dividir entre cero")
+else:
+    print(f"Error: Operacion '{operacion}' no reconocida. Usa: suma, resta, multiplicacion, division")
