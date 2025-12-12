@@ -21,8 +21,9 @@ else:
 ### 🔹 2. Reglas mentales importantes
 * Piense siempre en las condiciones como preguntas que deben responderse con `True` o `False`.
 * Simplifique expresiones complejas dividiéndolas en pasos intermedios o almacenando resultados en variables auxiliares.
-* Recuerde que las condiciones se evalúan de manera secuencial: una vez que una condición es verdadera, el resto se omite.
+* Recuerde que las condiciones se evalúan de manera secuencial (de arriba hacia abajo): una vez que una condición es verdadera, el resto se omite.
 * Valide constantemente los límites y casos extremos (por ejemplo, valores negativos, cero o cadenas vacías).
+* No necesitas elif si solo hay dos caminos, if + else basta.
 
 ### 🔹 3. Operadores clave
 * **Relacionales**: `==`, `!=`, `<`, `>`, `<=`, `>=`.
