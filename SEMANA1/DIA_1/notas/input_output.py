@@ -1,8 +1,6 @@
 # Entrada y Salida en Python
 
-Este documento explica de forma clara y completa cómo funcionan **la entrada y la salida de datos** en Python. Puedes copiarlo y pegarlo dentro de un archivo `.py` como comentario o usarlo como guía de estudio.
-
----
+# Este documento explica de forma clara y completa cómo funcionan **la entrada y la salida de datos** en Python. Puedes copiarlo y pegarlo dentro de un archivo `.py` como comentario o usarlo como guía de estudio.
 
 ## 1. ¿Qué es la Entrada y la Salida?
 
@@ -12,8 +10,6 @@ Python facilita ambas tareas a través de dos funciones principales:
 
 * `input()` → Para recibir datos del usuario.
 * `print()` → Para mostrar información en pantalla.'''
-
----
 
 ## 2. `input()`: Recibir datos del usuario
 
@@ -45,8 +41,11 @@ nombre = input("Tu nombre: ")
 
 ### 📌 Sintaxis
 
+valor1 = "Hola"
+valor2 = "Mundo"
+print(valor1, valor2, ...)  
 
-print(valor1, valor2, ...)
+'''Salida: Hola Mundo'''
 
 ### 📌 Ejemplo básico
 
@@ -54,10 +53,7 @@ print(valor1, valor2, ...)
 print("Hola", nombre)
 
 
-'''Esto muestra:
-
-
-Hola Alexis'''
+'''Esto muestra: Hola Alexis'''
 
 
 print()    # separa automáticamente los valores por un espacio.
