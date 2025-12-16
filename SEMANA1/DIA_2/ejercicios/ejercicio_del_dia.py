@@ -13,9 +13,9 @@ tos = input("¿Tiene tos? (s/n): ").lower()
 dolor = input("¿Tiene dolor corporal? (s/n): ").lower()
 
 # Convierte a booleanos
-fiebre = fiebre == "s"
-tos = tos == "s"
-dolor = dolor == "s"
+fiebre = fiebre == "s" or fiebre == "si"
+tos = tos == "s" or tos == "si"
+dolor = dolor == "s" or dolor == "si"   
 
 # Lógica principal
 if fiebre and tos and dolor:
