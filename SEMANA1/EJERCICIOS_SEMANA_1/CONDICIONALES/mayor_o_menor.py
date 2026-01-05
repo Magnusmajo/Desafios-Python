@@ -4,10 +4,13 @@ while True:
     try:
         num = float(input("Ingresa un número: "))
         
-        if  num >= 0:
+        if  num > 0:
             print(f"{num} es un número positivo")
-        else:
+        elif num < 0:
             print(f"{num} es un número negativo")
+        else:
+            print("El numero es Cero")
         break
+    
     except ValueError:
         print("Ingresa un número válido")
