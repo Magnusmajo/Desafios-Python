@@ -6,7 +6,7 @@ while True:
     try:
         num = float(input("Ingresa un número: "))
         if num >= 0:
-            suma = suma + num
+            suma += num
             print(suma)
         else:
             print("Número negativo: Chao")
