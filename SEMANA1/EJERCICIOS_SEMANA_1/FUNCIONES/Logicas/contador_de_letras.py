@@ -11,6 +11,13 @@ def contador(texto):
 texto = contador("Hola, Bienvenido a Python")
 print(texto)
 
+# <--- Forma mas óptima --->
+
+# def contador(texto):
+#     return sum(1 for i in texto if i.isalpha())
+
+# print(contador("Hola, Bienvenido a Python"))
+
 
 #  < ---Si se quiere contar todos los caracteres, incluyendo espacios --->
 
